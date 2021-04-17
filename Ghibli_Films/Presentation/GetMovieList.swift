@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import RxSwift
 
 protocol GetMovieList {
     func moviesData(filter: String)

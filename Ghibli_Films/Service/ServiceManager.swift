@@ -12,6 +12,7 @@ import RxCocoa
 
 class ServiceManager: ProviderData {
     
+    var errorStatus = BehaviorRelay<String>.init(value: "")
     var observFilms = BehaviorRelay<[MoviesModel]>.init(value: [])
     
     var disposeBag = DisposeBag()
@@ -35,9 +36,10 @@ class ServiceManager: ProviderData {
                 self.observFilms.accept(decodedData)
                 
             } onFailure: { (error) in
-                fatalError()
+                self.errorStatus.accept(error.localizedDescription)
+                
             }.disposed(by: disposeBag)
-        
+
     }
     
 }

@@ -35,24 +35,48 @@ class MovieListViewController: UIViewController, Coordinating {
         setupTableView()
         reloadUI()
         
+        movieVM.provider.errorStatus
+            .observe(on: MainScheduler.instance)
+            .do { (status) in
+                if !status.isEmpty {
+                    // Create new Alert
+                    let dialogMessage = UIAlertController(title: "\(status)", message: "Make sure your connection is online.", preferredStyle: .alert)
+                    
+                    // Create OK button with action handler
+                    let retry = UIAlertAction(title: "Retry", style: .default, handler: { (action) -> Void in
+                        self.movieVM.provider.getFilms()
+                     })
+                    
+                    //Add OK button to a dialog message
+                    dialogMessage.addAction(retry)
+
+                    // Present Alert to
+                    self.present(dialogMessage, animated: true, completion: nil)
+                }
+                
+            }.subscribe().disposed(by: disposeBag)
+
+
+        
     }
     
 }
 
 // MARK:- Func Reload UI Data
 extension MovieListViewController {
+    
     func reloadUI() {
+        
         movieVM.provider.getFilms()
         movieVM.moviesData(filter: "")
         
         movieVM.observResultMovies
-            .map { $0.filter{$0.release_date.hasPrefix(self.selectedYear.value)}}
             .bind(to: tableView.rx.items(cellIdentifier: "Cell", cellType: MoviesListTableViewCell.self)){ row, post, cell in
-                
                 cell.updateData(model: post)
-                
+
             }.disposed(by: disposeBag)
     }
+    
 }
 
 // MARK:- Setup Navigation Controller

@@ -17,6 +17,7 @@ class MovieListViewModel: PresentableData {
     
     var observResultMovies = BehaviorRelay<[MoviesModel]>.init(value: [])
     
+    
     required init(provider: ProviderData) {
         self.provider = provider
     }
@@ -28,7 +29,7 @@ extension MovieListViewModel {
         let withoutfilter = provider.observFilms
         let withfilter = provider.observFilms
             .map { $0.filter{$0.release_date.hasPrefix(filter)}}
-        
+
         switch filter == "None" {
         case false:
             withfilter

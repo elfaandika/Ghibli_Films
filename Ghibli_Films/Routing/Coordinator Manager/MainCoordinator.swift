@@ -11,11 +11,10 @@ import RxSwift
 
 class MainCoordinator: Coordinator {
     var navigatorController: UINavigationController?
-    var children: [Coordinator]?
+    var childrenCoordinator = [Coordinator]()
     
-    let disposeBag = DisposeBag()
-    
-    let presentableData: PresentableData
+    private let disposeBag = DisposeBag()
+    private let presentableData: PresentableData
     
     init(data: PresentableData) {
         self.presentableData = data
@@ -25,7 +24,6 @@ class MainCoordinator: Coordinator {
         var vc: UIViewController & Coordinating = MovieListViewController(movieViewMode: presentableData)
         vc.coordinator = self
         navigatorController?.setViewControllers([vc], animated: true)
-
 
     }
     

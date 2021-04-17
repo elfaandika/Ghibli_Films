@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MoviesListTableViewCell: UITableViewCell {
+final class MoviesListTableViewCell: UITableViewCell {
 
     @IBOutlet weak var coverImage: UIImageView!
     @IBOutlet weak var titleYearLabel: UILabel!

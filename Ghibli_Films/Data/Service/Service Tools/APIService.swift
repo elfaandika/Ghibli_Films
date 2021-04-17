@@ -8,12 +8,12 @@
 import UIKit
 import RxSwift
 
-class APIService: DataService {
+final class APIService: DataService {
     
-    func getData() -> Single<Data> {
+    func startService(url: URL) -> Single<Data> {
         
         return Single<Data>.create { single in
-            let task = URLSession.shared.dataTask(with: URL(string: "https://ghibliapi.herokuapp.com/films")!) { (data, response, error) in
+            let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
                 if let error = error {
                     single(.failure(error))
                     return

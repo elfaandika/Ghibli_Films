@@ -9,13 +9,14 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class MovieListViewController: UIViewController, Coordinating {
+final class MovieListViewController: UIViewController, Coordinating {
     var coordinator: Coordinator?
     
-    var selectedYear = BehaviorRelay<String>.init(value: "")
-    var disposeBag = DisposeBag()
-    let tableView = UITableView()
-    let movieVM: PresentableData
+    let selectedYear = BehaviorRelay<String>.init(value: "")
+    private let disposeBag = DisposeBag()
+    private let movieVM: PresentableData
+    
+    lazy var tableView = UITableView()
     
     
     init(movieViewMode: PresentableData) {
@@ -34,29 +35,7 @@ class MovieListViewController: UIViewController, Coordinating {
         setupNavigation()
         setupTableView()
         reloadUI()
-        
-        movieVM.provider.errorStatus
-            .observe(on: MainScheduler.instance)
-            .do { (status) in
-                if !status.isEmpty {
-                    // Create new Alert
-                    let dialogMessage = UIAlertController(title: "\(status)", message: "Make sure your connection is online.", preferredStyle: .alert)
-                    
-                    // Create OK button with action handler
-                    let retry = UIAlertAction(title: "Retry", style: .default, handler: { (action) -> Void in
-                        self.movieVM.provider.getFilms()
-                     })
-                    
-                    //Add OK button to a dialog message
-                    dialogMessage.addAction(retry)
-
-                    // Present Alert to
-                    self.present(dialogMessage, animated: true, completion: nil)
-                }
-                
-            }.subscribe().disposed(by: disposeBag)
-
-
+        monitorAppStatus()
         
     }
     
@@ -65,9 +44,9 @@ class MovieListViewController: UIViewController, Coordinating {
 // MARK:- Func Reload UI Data
 extension MovieListViewController {
     
-    func reloadUI() {
+    private func reloadUI() {
         
-        movieVM.provider.getFilms()
+        movieVM.provider.getMoviesData()
         movieVM.moviesData(filter: "")
         
         movieVM.observResultMovies
@@ -81,7 +60,7 @@ extension MovieListViewController {
 
 // MARK:- Setup Navigation Controller
 extension MovieListViewController {
-    func setupNavigation() {
+    private func setupNavigation() {
         let navBar = navigationController!.navigationBar
         navigationItem.title = "Ghibli Movies"
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "calendar"), style: .done, target: self, action: #selector(tapForGear))
@@ -109,10 +88,39 @@ extension MovieListViewController {
     }
     
 }
+
+// MARK:- Check app status
+extension MovieListViewController {
+    private func monitorAppStatus() {
+        movieVM.provider.observErrorStatus
+            .observe(on: MainScheduler.instance)
+            .do { (status) in
+                if !status.isEmpty {
+                    // Create new Alert
+                    let dialogMessage = UIAlertController(title: "\(status)", message: "Make sure your connection is online.", preferredStyle: .alert)
+                    
+                    // Create OK button with action handler
+                    let retry = UIAlertAction(title: "Retry", style: .default, handler: { (action) -> Void in
+                        self.movieVM.provider.getMoviesData()
+                     })
+                    
+                    //Add OK button to a dialog message
+                    dialogMessage.addAction(retry)
+
+                    // Present Alert to
+                    self.present(dialogMessage, animated: true, completion: nil)
+                }
+                
+            }.subscribe().disposed(by: disposeBag)
+        
+    }
+    
+}
+
 // MARK:- Setup UI Element Programmatically
 extension MovieListViewController {
     
-    func setupTableView() {
+    private func setupTableView() {
         view.addSubview(tableView)
         tableView.register(UINib(nibName: "MoviesListTableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
         tableView.isScrollEnabled = true

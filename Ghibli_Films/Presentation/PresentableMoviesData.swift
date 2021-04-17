@@ -9,11 +9,9 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-class MovieListViewModel: PresentableData {
-    
-    
+final class PresentableMoviesData: PresentableData {
     var provider: ProviderData
-    let disposeBag = DisposeBag()
+    private let disposeBag = DisposeBag()
     
     var observResultMovies = BehaviorRelay<[MoviesModel]>.init(value: [])
     
@@ -23,11 +21,11 @@ class MovieListViewModel: PresentableData {
     }
 }
 
-extension MovieListViewModel {
+extension PresentableMoviesData {
     func moviesData(filter: String) {
         
-        let withoutfilter = provider.observFilms
-        let withfilter = provider.observFilms
+        let withoutfilter = provider.observMoviesData
+        let withfilter = provider.observMoviesData
             .map { $0.filter{$0.release_date.hasPrefix(filter)}}
 
         switch filter == "None" {
@@ -45,11 +43,11 @@ extension MovieListViewModel {
     
 }
 
-extension MovieListViewModel {
+extension PresentableMoviesData {
     func yearData() -> Observable<[String]> {
         return Observable<[String]>.create { (observer) -> Disposable in
             
-            self.provider.observFilms
+            self.provider.observMoviesData
                 .subscribe { (movies) in
                     
                     var temp: [String] = ["None"]

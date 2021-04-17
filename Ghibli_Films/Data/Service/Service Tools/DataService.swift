@@ -9,5 +9,5 @@ import Foundation
 import RxSwift
 
 protocol DataService {
-    func getData() -> Single<Data>
+    func startService(url: URL) -> Single<Data>
 }

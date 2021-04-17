@@ -9,16 +9,16 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class FilterSelectViewController: UIViewController {
+final class FilterSelectViewController: UIViewController {
     
     
-    let disposeBag = DisposeBag()
-    let popupView = UIView()
-    let viewLabel = UILabel()
-    let viewPicker = UIPickerView()
+    private let disposeBag = DisposeBag()
+    lazy var popupView = UIView()
+    lazy var viewLabel = UILabel()
+    lazy var viewPicker = UIPickerView()
     
     let selectedFilter = BehaviorRelay<String>.init(value: "")
-    var years = Observable<[String]>.empty()
+    private var years = Observable<[String]>.empty()
     
     
     init(years: Observable<[String]>) {

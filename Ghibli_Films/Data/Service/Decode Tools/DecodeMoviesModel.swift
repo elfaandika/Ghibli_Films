@@ -8,7 +8,7 @@
 import Foundation
 import RxSwift
 
-class DecodeHTTP: DecodeData {
+final class DecodeMoviesModel: DecodeData {
     func decode(data: Data) -> Single<[MoviesModel]> {
         return Single<[MoviesModel]>.create { observer in
             do {

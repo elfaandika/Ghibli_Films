@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		13151B69A08FACCC1CC82C16 /* Pods_Ghibli_FilmsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C952C530FA19845F7BAB4C3 /* Pods_Ghibli_FilmsTests.framework */; };
-		3205C1DB885F76307CAF3D49 /* Pods_Ghibli_Films.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F4FD8C35B621A0345D70343 /* Pods_Ghibli_Films.framework */; };
+		51A42A0131C3B9D642C11D44 /* libPods-Ghibli_FilmsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55075B2CB42B07C104EE2DB8 /* libPods-Ghibli_FilmsTests.a */; };
 		E114C5D5262ADDAB0004C18E /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E114C5D4262ADDAB0004C18E /* APIConfig.swift */; };
 		E114C5DA262ADEF40004C18E /* ghibliMoviesAPIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E114C5D9262ADEF40004C18E /* ghibliMoviesAPIConfig.swift */; };
 		E1242AD926281E5000AFBB85 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1242AD826281E5000AFBB85 /* Coordinator.swift */; };
@@ -34,7 +33,7 @@
 		E19C5E432625F6DF0057BC3D /* MoviesListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19C5E412625F6DF0057BC3D /* MoviesListTableViewCell.swift */; };
 		E19C5E442625F6DF0057BC3D /* MoviesListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E19C5E422625F6DF0057BC3D /* MoviesListTableViewCell.xib */; };
 		E1C7A2B626262614009CDD00 /* FilterSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C7A2B526262614009CDD00 /* FilterSelectViewController.swift */; };
-		ED5B27586C44AF5C410510A5 /* Pods_Ghibli_Films_Ghibli_FilmsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCEFF098B410E782B73E9762 /* Pods_Ghibli_Films_Ghibli_FilmsUITests.framework */; };
+		EB03C2884511BEA937A8D012 /* libPods-Ghibli_Films.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC081BEF0E272664227F2AA /* libPods-Ghibli_Films.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,15 +54,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		13BDA677B2FD7D694807060A /* Pods-Ghibli_FilmsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ghibli_FilmsTests.debug.xcconfig"; path = "Target Support Files/Pods-Ghibli_FilmsTests/Pods-Ghibli_FilmsTests.debug.xcconfig"; sourceTree = "<group>"; };
-		1F4FD8C35B621A0345D70343 /* Pods_Ghibli_Films.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ghibli_Films.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF7610C8450E1C72AD91B76 /* Pods-Ghibli_Films.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ghibli_Films.release.xcconfig"; path = "Target Support Files/Pods-Ghibli_Films/Pods-Ghibli_Films.release.xcconfig"; sourceTree = "<group>"; };
+		55075B2CB42B07C104EE2DB8 /* libPods-Ghibli_FilmsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ghibli_FilmsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FFBDCFCF43D7EBAD03EDE30 /* Pods-Ghibli_Films-Ghibli_FilmsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ghibli_Films-Ghibli_FilmsUITests.release.xcconfig"; path = "Target Support Files/Pods-Ghibli_Films-Ghibli_FilmsUITests/Pods-Ghibli_Films-Ghibli_FilmsUITests.release.xcconfig"; sourceTree = "<group>"; };
-		6C952C530FA19845F7BAB4C3 /* Pods_Ghibli_FilmsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ghibli_FilmsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74A3898B1AEFC04465D28585 /* Pods-Ghibli_Films-Ghibli_FilmsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ghibli_Films-Ghibli_FilmsUITests.debug.xcconfig"; path = "Target Support Files/Pods-Ghibli_Films-Ghibli_FilmsUITests/Pods-Ghibli_Films-Ghibli_FilmsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7821382E25539B857B924B2C /* Pods-Ghibli_FilmsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ghibli_FilmsTests.debug.xcconfig"; path = "Target Support Files/Pods-Ghibli_FilmsTests/Pods-Ghibli_FilmsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7AD63D890F9E2B9B858C4C98 /* Pods-Ghibli_Films-Ghibli_FilmsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ghibli_Films-Ghibli_FilmsTests.release.xcconfig"; path = "Target Support Files/Pods-Ghibli_Films-Ghibli_FilmsTests/Pods-Ghibli_Films-Ghibli_FilmsTests.release.xcconfig"; sourceTree = "<group>"; };
+		94D43E5CBE0C946ECB6BFC9F /* Pods-Ghibli_FilmsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ghibli_FilmsTests.release.xcconfig"; path = "Target Support Files/Pods-Ghibli_FilmsTests/Pods-Ghibli_FilmsTests.release.xcconfig"; sourceTree = "<group>"; };
 		A22FF3B153864BB0B86118F5 /* Pods-Ghibli_Films.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ghibli_Films.debug.xcconfig"; path = "Target Support Files/Pods-Ghibli_Films/Pods-Ghibli_Films.debug.xcconfig"; sourceTree = "<group>"; };
-		BCEFF098B410E782B73E9762 /* Pods_Ghibli_Films_Ghibli_FilmsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ghibli_Films_Ghibli_FilmsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C5566571E5E3F57C822A25B1 /* Pods-Ghibli_FilmsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ghibli_FilmsTests.release.xcconfig"; path = "Target Support Files/Pods-Ghibli_FilmsTests/Pods-Ghibli_FilmsTests.release.xcconfig"; sourceTree = "<group>"; };
+		BDC081BEF0E272664227F2AA /* libPods-Ghibli_Films.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ghibli_Films.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E114C5D4262ADDAB0004C18E /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
 		E114C5D9262ADEF40004C18E /* ghibliMoviesAPIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ghibliMoviesAPIConfig.swift; sourceTree = "<group>"; };
 		E1242AD826281E5000AFBB85 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -95,6 +94,7 @@
 		E19C5E412625F6DF0057BC3D /* MoviesListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListTableViewCell.swift; sourceTree = "<group>"; };
 		E19C5E422625F6DF0057BC3D /* MoviesListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoviesListTableViewCell.xib; sourceTree = "<group>"; };
 		E1C7A2B526262614009CDD00 /* FilterSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSelectViewController.swift; sourceTree = "<group>"; };
+		FC7A4FAC1898D583233752F7 /* Pods-Ghibli_Films-Ghibli_FilmsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ghibli_Films-Ghibli_FilmsTests.debug.xcconfig"; path = "Target Support Files/Pods-Ghibli_Films-Ghibli_FilmsTests/Pods-Ghibli_Films-Ghibli_FilmsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3205C1DB885F76307CAF3D49 /* Pods_Ghibli_Films.framework in Frameworks */,
+				EB03C2884511BEA937A8D012 /* libPods-Ghibli_Films.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13151B69A08FACCC1CC82C16 /* Pods_Ghibli_FilmsTests.framework in Frameworks */,
+				51A42A0131C3B9D642C11D44 /* libPods-Ghibli_FilmsTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +118,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED5B27586C44AF5C410510A5 /* Pods_Ghibli_Films_Ghibli_FilmsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,8 +131,10 @@
 				3BF7610C8450E1C72AD91B76 /* Pods-Ghibli_Films.release.xcconfig */,
 				74A3898B1AEFC04465D28585 /* Pods-Ghibli_Films-Ghibli_FilmsUITests.debug.xcconfig */,
 				5FFBDCFCF43D7EBAD03EDE30 /* Pods-Ghibli_Films-Ghibli_FilmsUITests.release.xcconfig */,
-				13BDA677B2FD7D694807060A /* Pods-Ghibli_FilmsTests.debug.xcconfig */,
-				C5566571E5E3F57C822A25B1 /* Pods-Ghibli_FilmsTests.release.xcconfig */,
+				FC7A4FAC1898D583233752F7 /* Pods-Ghibli_Films-Ghibli_FilmsTests.debug.xcconfig */,
+				7AD63D890F9E2B9B858C4C98 /* Pods-Ghibli_Films-Ghibli_FilmsTests.release.xcconfig */,
+				7821382E25539B857B924B2C /* Pods-Ghibli_FilmsTests.debug.xcconfig */,
+				94D43E5CBE0C946ECB6BFC9F /* Pods-Ghibli_FilmsTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -316,9 +317,8 @@
 		EB17364E337D1F3C30387C47 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1F4FD8C35B621A0345D70343 /* Pods_Ghibli_Films.framework */,
-				BCEFF098B410E782B73E9762 /* Pods_Ghibli_Films_Ghibli_FilmsUITests.framework */,
-				6C952C530FA19845F7BAB4C3 /* Pods_Ghibli_FilmsTests.framework */,
+				BDC081BEF0E272664227F2AA /* libPods-Ghibli_Films.a */,
+				55075B2CB42B07C104EE2DB8 /* libPods-Ghibli_FilmsTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -334,7 +334,6 @@
 				E19C5D18262554BA0057BC3D /* Sources */,
 				E19C5D19262554BA0057BC3D /* Frameworks */,
 				E19C5D1A262554BA0057BC3D /* Resources */,
-				F6A12ED48ED6FC9C28B2AAB9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -349,11 +348,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E19C5D49262554BB0057BC3D /* Build configuration list for PBXNativeTarget "Ghibli_FilmsTests" */;
 			buildPhases = (
-				12791AA6FB65475FEFCF1E96 /* [CP] Check Pods Manifest.lock */,
+				9F9675ED9375EF1C8633D420 /* [CP] Check Pods Manifest.lock */,
 				E19C5D2E262554BB0057BC3D /* Sources */,
 				E19C5D2F262554BB0057BC3D /* Frameworks */,
 				E19C5D30262554BB0057BC3D /* Resources */,
-				FA7FB753E3C55E90851829C3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -369,11 +367,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E19C5D4C262554BB0057BC3D /* Build configuration list for PBXNativeTarget "Ghibli_FilmsUITests" */;
 			buildPhases = (
-				F2FEB68956FBC0CF0AA64AC1 /* [CP] Check Pods Manifest.lock */,
 				E19C5D39262554BB0057BC3D /* Sources */,
 				E19C5D3A262554BB0057BC3D /* Frameworks */,
 				E19C5D3B262554BB0057BC3D /* Resources */,
-				C9FE75864105EE3C46866F1B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -455,28 +451,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		12791AA6FB65475FEFCF1E96 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Ghibli_FilmsTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		404188148DFCBB5DA51E2CAC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -499,24 +473,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C9FE75864105EE3C46866F1B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Ghibli_Films-Ghibli_FilmsUITests/Pods-Ghibli_Films-Ghibli_FilmsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Ghibli_Films-Ghibli_FilmsUITests/Pods-Ghibli_Films-Ghibli_FilmsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ghibli_Films-Ghibli_FilmsUITests/Pods-Ghibli_Films-Ghibli_FilmsUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F2FEB68956FBC0CF0AA64AC1 /* [CP] Check Pods Manifest.lock */ = {
+		9F9675ED9375EF1C8633D420 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -531,45 +488,11 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Ghibli_Films-Ghibli_FilmsUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Ghibli_FilmsTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F6A12ED48ED6FC9C28B2AAB9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Ghibli_Films/Pods-Ghibli_Films-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Ghibli_Films/Pods-Ghibli_Films-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ghibli_Films/Pods-Ghibli_Films-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FA7FB753E3C55E90851829C3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Ghibli_FilmsTests/Pods-Ghibli_FilmsTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Ghibli_FilmsTests/Pods-Ghibli_FilmsTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ghibli_FilmsTests/Pods-Ghibli_FilmsTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -803,7 +726,7 @@
 		};
 		E19C5D4A262554BB0057BC3D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13BDA677B2FD7D694807060A /* Pods-Ghibli_FilmsTests.debug.xcconfig */;
+			baseConfigurationReference = 7821382E25539B857B924B2C /* Pods-Ghibli_FilmsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -826,7 +749,7 @@
 		};
 		E19C5D4B262554BB0057BC3D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C5566571E5E3F57C822A25B1 /* Pods-Ghibli_FilmsTests.release.xcconfig */;
+			baseConfigurationReference = 94D43E5CBE0C946ECB6BFC9F /* Pods-Ghibli_FilmsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -849,9 +772,8 @@
 		};
 		E19C5D4D262554BB0057BC3D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74A3898B1AEFC04465D28585 /* Pods-Ghibli_Films-Ghibli_FilmsUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2B3XLJ53D7;
 				INFOPLIST_FILE = Ghibli_FilmsUITests/Info.plist;
@@ -870,9 +792,8 @@
 		};
 		E19C5D4E262554BB0057BC3D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5FFBDCFCF43D7EBAD03EDE30 /* Pods-Ghibli_Films-Ghibli_FilmsUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2B3XLJ53D7;
 				INFOPLIST_FILE = Ghibli_FilmsUITests/Info.plist;

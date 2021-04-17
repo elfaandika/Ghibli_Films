@@ -1,4 +1,4 @@
-framework module Pods_Ghibli_FilmsTests {
+module Pods_Ghibli_FilmsTests {
   umbrella header "Pods-Ghibli_FilmsTests-umbrella.h"
 
   export *

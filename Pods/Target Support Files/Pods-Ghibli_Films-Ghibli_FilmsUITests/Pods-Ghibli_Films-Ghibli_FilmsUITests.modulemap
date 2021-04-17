@@ -1,6 +1,0 @@
-framework module Pods_Ghibli_Films_Ghibli_FilmsUITests {
-  umbrella header "Pods-Ghibli_Films-Ghibli_FilmsUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

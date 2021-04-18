@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let navVC = UINavigationController()
 
-        let coordinator = MainCoordinator(data: PresentableMoviesData(provider: ServiceManager(service: APIService(), decode: DecodeMoviesModel(), config: ghibliMoviesAPIConfig())))
+        let coordinator = MainCoordinator(data: PresentableMoviesData(provider: FetchMovies(service: APIService(), decode: DecodeMoviesModel(), config: ghibliMoviesAPIConfig())))
         coordinator.navigatorController = navVC
         
         let window = UIWindow(windowScene: windowScene)

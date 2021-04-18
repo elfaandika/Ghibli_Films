@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let nacVC = UINavigationController()
         
-        let coordinator = MainCoordinator(data: PresentableMoviesData(provider: ServiceManager(service: APIService(), decode: DecodeMoviesModel(), config: ghibliMoviesAPIConfig())))
+        let coordinator = MainCoordinator(data: PresentableMoviesData(provider: FetchMovies(service: APIService(), decode: DecodeMoviesModel(), config: ghibliMoviesAPIConfig())))
         
         let window = UIWindow(frame: UIScreen.main.bounds)
         window.rootViewController = nacVC

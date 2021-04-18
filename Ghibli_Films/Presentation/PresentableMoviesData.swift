@@ -10,13 +10,13 @@ import RxSwift
 import RxCocoa
 
 final class PresentableMoviesData: PresentableData {
-    var provider: ProviderData
+    var provider: ServiceManager1
     private let disposeBag = DisposeBag()
     
     var observResultMovies = BehaviorRelay<[MoviesModel]>.init(value: [])
     
     
-    required init(provider: ProviderData) {
+    required init(provider: ServiceManager1) {
         self.provider = provider
     }
 }

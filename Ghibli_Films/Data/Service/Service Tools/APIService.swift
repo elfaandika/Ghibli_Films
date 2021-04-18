@@ -26,7 +26,7 @@ final class APIService: DataService {
                 single(.success(data))
             }
             task.resume()
-            return Disposables.create{task.cancel()}
+            return Disposables.create()
         }
     }
     

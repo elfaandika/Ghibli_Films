@@ -21,14 +21,14 @@
 		E19C5D59262555D50057BC3D /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19C5D58262555D50057BC3D /* MovieListViewController.swift */; };
 		E19C5D6626255D5B0057BC3D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19C5D6526255D5B0057BC3D /* APIService.swift */; };
 		E19C5D8A26256D4D0057BC3D /* MoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19C5D8926256D4C0057BC3D /* MoviesModel.swift */; };
-		E19C5D97262572F20057BC3D /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19C5D96262572F20057BC3D /* ServiceManager.swift */; };
+		E19C5D97262572F20057BC3D /* FetchMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19C5D96262572F20057BC3D /* FetchMovies.swift */; };
 		E19C5DA4262573670057BC3D /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19C5DA3262573670057BC3D /* DataService.swift */; };
 		E19C5DB126257B1E0057BC3D /* DecodeTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19C5DB026257B1E0057BC3D /* DecodeTools.swift */; };
 		E19C5DC0262580670057BC3D /* DecodeMoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19C5DBF262580670057BC3D /* DecodeMoviesModel.swift */; };
 		E19C5DD52625A2D30057BC3D /* GetMovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19C5DD42625A2D30057BC3D /* GetMovieList.swift */; };
 		E19C5DDA2625A2E30057BC3D /* GetReleaseYear.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19C5DD92625A2E30057BC3D /* GetReleaseYear.swift */; };
 		E19C5E1C2625A9520057BC3D /* PresentableMoviesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19C5E1B2625A9520057BC3D /* PresentableMoviesData.swift */; };
-		E19C5E272625ABEF0057BC3D /* ProviderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19C5E262625ABEF0057BC3D /* ProviderData.swift */; };
+		E19C5E272625ABEF0057BC3D /* ServiceManager1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19C5E262625ABEF0057BC3D /* ServiceManager1.swift */; };
 		E19C5E342625BA4A0057BC3D /* PresentableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19C5E332625BA4A0057BC3D /* PresentableData.swift */; };
 		E19C5E432625F6DF0057BC3D /* MoviesListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19C5E412625F6DF0057BC3D /* MoviesListTableViewCell.swift */; };
 		E19C5E442625F6DF0057BC3D /* MoviesListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E19C5E422625F6DF0057BC3D /* MoviesListTableViewCell.xib */; };
@@ -82,14 +82,14 @@
 		E19C5D58262555D50057BC3D /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
 		E19C5D6526255D5B0057BC3D /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		E19C5D8926256D4C0057BC3D /* MoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesModel.swift; sourceTree = "<group>"; };
-		E19C5D96262572F20057BC3D /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		E19C5D96262572F20057BC3D /* FetchMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMovies.swift; sourceTree = "<group>"; };
 		E19C5DA3262573670057BC3D /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		E19C5DB026257B1E0057BC3D /* DecodeTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodeTools.swift; sourceTree = "<group>"; };
 		E19C5DBF262580670057BC3D /* DecodeMoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodeMoviesModel.swift; sourceTree = "<group>"; };
 		E19C5DD42625A2D30057BC3D /* GetMovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMovieList.swift; sourceTree = "<group>"; };
 		E19C5DD92625A2E30057BC3D /* GetReleaseYear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReleaseYear.swift; sourceTree = "<group>"; };
 		E19C5E1B2625A9520057BC3D /* PresentableMoviesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentableMoviesData.swift; sourceTree = "<group>"; };
-		E19C5E262625ABEF0057BC3D /* ProviderData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderData.swift; sourceTree = "<group>"; };
+		E19C5E262625ABEF0057BC3D /* ServiceManager1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager1.swift; sourceTree = "<group>"; };
 		E19C5E332625BA4A0057BC3D /* PresentableData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentableData.swift; sourceTree = "<group>"; };
 		E19C5E412625F6DF0057BC3D /* MoviesListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListTableViewCell.swift; sourceTree = "<group>"; };
 		E19C5E422625F6DF0057BC3D /* MoviesListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoviesListTableViewCell.xib; sourceTree = "<group>"; };
@@ -257,8 +257,8 @@
 		E19C5DA8262573FB0057BC3D /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				E19C5E262625ABEF0057BC3D /* ProviderData.swift */,
-				E19C5D96262572F20057BC3D /* ServiceManager.swift */,
+				E19C5E262625ABEF0057BC3D /* ServiceManager1.swift */,
+				E19C5D96262572F20057BC3D /* FetchMovies.swift */,
 				E114C5DE262ADF7F0004C18E /* API Config */,
 				E114C5D0262ADD5B0004C18E /* Service Tools */,
 				E19C5DBB26257E2A0057BC3D /* Decode Tools */,
@@ -503,7 +503,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E19C5D59262555D50057BC3D /* MovieListViewController.swift in Sources */,
-				E19C5D97262572F20057BC3D /* ServiceManager.swift in Sources */,
+				E19C5D97262572F20057BC3D /* FetchMovies.swift in Sources */,
 				E19C5DC0262580670057BC3D /* DecodeMoviesModel.swift in Sources */,
 				E1C7A2B626262614009CDD00 /* FilterSelectViewController.swift in Sources */,
 				E114C5DA262ADEF40004C18E /* ghibliMoviesAPIConfig.swift in Sources */,
@@ -514,7 +514,7 @@
 				E19C5E342625BA4A0057BC3D /* PresentableData.swift in Sources */,
 				E114C5D5262ADDAB0004C18E /* APIConfig.swift in Sources */,
 				E19C5DB126257B1E0057BC3D /* DecodeTools.swift in Sources */,
-				E19C5E272625ABEF0057BC3D /* ProviderData.swift in Sources */,
+				E19C5E272625ABEF0057BC3D /* ServiceManager1.swift in Sources */,
 				E19C5E432625F6DF0057BC3D /* MoviesListTableViewCell.swift in Sources */,
 				E1242ADE26281F3100AFBB85 /* MainCoordinator.swift in Sources */,
 				E19C5D6626255D5B0057BC3D /* APIService.swift in Sources */,

@@ -10,7 +10,7 @@ import RxSwift
 import RxCocoa
 
 
-class ServiceManager: ProviderData {
+class FetchMovies: ServiceManager1 {
     
     var observErrorStatus = BehaviorRelay<String>.init(value: "")
     var observMoviesData = BehaviorRelay<[MoviesModel]>.init(value: [])
@@ -41,6 +41,13 @@ class ServiceManager: ProviderData {
             } onFailure: { (error) in
                 self.observErrorStatus.accept(error.localizedDescription)
                 
+            }.disposed(by: disposeBag)
+        
+        self.service.startService(url: config.infoURL)
+            .subscribe { (data) in
+                print("data")
+            } onFailure: { (error) in
+                print("error")
             }.disposed(by: disposeBag)
 
     }

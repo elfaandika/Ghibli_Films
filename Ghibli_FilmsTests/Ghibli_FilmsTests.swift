@@ -43,12 +43,6 @@ class APIServiceTest: XCTestCase {
         super.tearDown()
     }
     
-    func testWhenFetchRequestWhenURLCorrect() {
-        
-        
-        
-        
-    }
     
     
 }

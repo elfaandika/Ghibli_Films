@@ -10,8 +10,8 @@ import RxSwift
 import RxCocoa
 
 protocol PresentableData: GetMovieList, GetReleaseYear {
-    var provider: ServiceManager1 {get set}
+    var provider: ServiceManager {get set}
     var observResultMovies: BehaviorRelay<[MoviesModel]> {get set}
     
-    init(provider: ServiceManager1)
+    init(provider: ServiceManager)
 }

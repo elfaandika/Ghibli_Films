@@ -9,7 +9,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-protocol ServiceManager1 {
+protocol ServiceManager {
     var observMoviesData: BehaviorRelay<[MoviesModel]> {get set}
     var observErrorStatus: BehaviorRelay<String> {get set}
     func getMoviesData()
